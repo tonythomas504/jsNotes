@@ -1,0 +1,30 @@
+h1 {
+    color: lightgreen;
+    text-align: center;
+}
+
+h3 {
+    color: blue;
+    font-weight: 1;
+}
+
+p {
+    color: red;
+}
+
+#truths {
+    border: 3px solid black;
+    border-radius: 1em;
+    background-color: grey;
+    padding: 0.25em;
+    text-align: center;
+}
+
+.option {
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: lightgray;
+    text-align: center;
+    width: 33%;
+    display: flex;
+}
