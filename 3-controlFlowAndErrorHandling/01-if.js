@@ -1,46 +1,46 @@
-// let isOn = false;
-// //? if(<some expression>) {<do something}
-// // if (isOn == true) {
-// //     console.log('The light is on!');
-// // };
-
-// if (isOn) {
+let isOn = false;
+//? if(<some expression>) {<do something}
+// if (isOn == true) {
 //     console.log('The light is on!');
-// }
+// };
 
-// if (isOn == false) {
-//     console.log('The light is off');
-// }
+if (isOn) {
+    console.log('The light is on!');
+}
 
-// let weather = 79;
+if (isOn == false) {
+    console.log('The light is off');
+}
 
-// // if (weather < 70) {
-// //     console.log('Wear a jacket');
-// // };
+let weather = 79;
 
 // if (weather < 70) {
 //     console.log('Wear a jacket');
-// } else { //? else can follow an if statement, if the if-statement fails.
-//     console.log('No jacket necessary!');
 // };
 
-//? Switch want to see if things match
+if (weather < 70) {
+    console.log('Wear a jacket');
+} else { //? else can follow an if statement, if the if-statement fails.
+    console.log('No jacket necessary!');
+};
 
-// let officeCharacter = "Pam";
-// switch(officeCharacter) {
-//    // ? If  officeCharacter == "Michael" 
-//     case "Michael":
-//     console.log("My mind is going a mile an hour");
-//     break; // break will leave the switch after the block runs
-//     case "Dwight":
-//         console.log("Perfectenschleg"); 
-//         break;
-//     case "Jim":
-//         console.log("Bears. Beats. Battlestar Galatica");
-//         break;
-//     default:
-//         console.log(`I'm sorry, ${officeCharacter}, but I do know you`);
-// }
+// Switch want to see if things match
+
+let officeCharacter = "Pam";
+switch (officeCharacter) {
+    // ? If  officeCharacter == "Michael" 
+    case "Michael":
+        //     console.log("My mind is going a mile an hour");
+        break; // break will leave the switch after the block runs
+    case "Dwight":
+        console.log("Perfectenschleg");
+        break;
+    case "Jim":
+        console.log("Bears. Beats. Battlestar Galatica");
+        break;
+    default:
+        console.log(`I'm sorry, ${officeCharacter}, but I do know you`);
+}
 
 // let dessert  = 'carrots';
 
@@ -68,10 +68,10 @@
 //     console.log('Not on the menu');
 // }
 
-//? Ternary yes or no really nice under html- don't want to have no more than 2 parts
-let num = -1;
-//? () ? true: false
+// //? Ternary yes or no really nice under html- don't want to have no more than 2 parts
+// let num = -1;
+// //? () ? true: false
 
-(num > 0) ? console.log('yes') : console.log('no');
+// (num > 0) ? console.log('yes') : console.log('no');
 
-//? if else statements are procedural 
+// //? if else statements are procedural 
