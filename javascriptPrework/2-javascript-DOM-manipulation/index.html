@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- All of our HTML code will go here-->
+    <h1>Hello world</h1>
+    <p id="testParagraph">sample text</p>
+    <p class="sampleClass">This paragraph has a class of 'sampleClass'</p>
+    <button id="clickThisButton">I want to be clicked</button>
+    <label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput" placeholder="John Smith">
+    <p>Welcome!</p>
+    <p>No name has been entered</p>
+    <script type ="text/javascript">
+    /* All of our JavaScript code will go here */
+    var x = 10
+    console.log(x);
+    document.getElementById('testParagraph').style.color ='blue'
+    console.log(document.getElementById('testParagraph').style.color);
+    console.log(document.querySelectorAll("p.sampleClass"));
+    document.querySelectorAll('p.sampleClass')[0].innerText = "My text was changed";
+    document.querySelectorAll('p.sampleClass')[0].innerHTML = "<span>I am a whole new element!</span>";
+    document.getElementById('clickThisButton').addEventListener('click', (details) => {
+        console.log('details');
+    });
+    document.getElementById('clickThisButton').addEventListener('click', (details) => {
+        details.target.style.backgroundColor = 'red';
+    });
+    document.getElementById('nameInput').addEventListener('keyup', (event) => {
+        if (event.target.value === '') {
+            document.getElementsByTagName("p")[1].innerText = `No name has been entered`;
+        } else {
+            document.getElementsByTagName("p")[1].innerText = `Everyone please welcome ${event.target.value} to the stage.`;
+        }
+    });
+</script>
+
+    </script>
+</body>
+</html>
+
+// innerText will only reference the text displayed on the screen.
+// innerHTML will reference all HTML elements inside the tag. Let's do a quick test:
+// keyup event - the event that fires when a key is released.
+
+/* 
+Job of the Client
+Let's keep it simple for now. Just remember that a client has two major jobs:
+
+1. Display data for the user. Render items to the DOM.
+2. Make HTTP requests to the server. We'll talk about this next.
+
+4 Commonly Used HTTP Verbs
+
+POST
+Any time a user is creating new information, that is usually a POST request. So, in the above example, when they make a write a new post and hit post.
+
+GET
+Any time a user is retrieving existing information, that is usually a GET request. So, in the above example, when a user goes to messenger and can see all their friends messages.
+
+PUT
+Any time a user is overwriting existing information or updating information, that is usually a PUT request. So, in the above example, when a user updates their favorite brands they are doing a PUT request.
+
+DELETE
+Any time a user is deleting existing information, that is usually a DELETE request. So, in the above example, when a user would delete their profile, they would be doing a DELETE request.
+
+*/
+
+//* Endpoints are just a URL that the API developer decides, where clients can access specific information.
+
+/* 
+
+3 States of Promises 
+
+1. Pending - You have to wait until December 25 to receive your gift and find out whether you are naughty or nice.
+2. Resolved - You've been a good little boy/girl and get that super awesome toy from Santa that you asked for.
+3. Rejected - That super awesome toy of your dreams isn't waiting under the tree. You've been a mischievous, disobedient little brat and get what you deserve: a lump of coal.
+*/
+
+//* Basic model of a fetch
+/* 
+1. The fetch() method takes in your desired resource's path as a mandatory argument.
+2. The Request object returns a Promise that resolves to the argument's Response.
+3. After retrieving a Response, a multitude of methods define the body content and how it will be handled.
+4. Please note that you can use the Request() and Response() constructors to directly create requests and responses, but they are more likely to be created by other API actions.
+
+*/
+
+/* Basic Fetch Components 
+GlobalFetch - contains the fetch() used to fetch a resource.
+
+Headers - HTTP response/request headers can be queried and allow you to do things such as retrieving, updating, or deleting.
+
+Request - a resource request. It contains the method of the request (GET, POST, etc.), the url, associated headers, and more.
+
+Response - the response to the request. It contains the headers and url, but more importantly replies with the status code to determine whether or not the request was successful.
+
+Body - contains methods relating to the main content of the response/request that allow you to specify content type and how to handle it.
+
+
+
+*/

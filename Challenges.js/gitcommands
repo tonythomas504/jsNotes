@@ -1,0 +1,16 @@
+git init <--- Creates a .git folder and makes a repository (only do this one time per repository)
+
+git add . <--- Stages filed to be committed 
+
+git status <--- Shows the differnce between last commit and now 
+
+git commit -m "" <--- Takes the staged state and saves it 
+
+
+git log <--- Shows the commit logs
+
+git help <--- Shows overview of git commands
+
+git log -b <--- Show all commit messages
+
+git push <--- Pushes changes to github
